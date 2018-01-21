@@ -1,0 +1,13 @@
+import pygame
+
+player_up_walk=[pygame.image.load('images/playersplit/back0.png'),pygame.image.load('images/playersplit/back1.png'),pygame.image.load('images/playersplit/back0.png'),pygame.image.load('images/playersplit/back2.png')]
+player_down_walk=[pygame.image.load('images/playersplit/front0.png'),pygame.image.load('images/playersplit/front1.png'),pygame.image.load('images/playersplit/front0.png'),pygame.image.load('images/playersplit/front2.png')]
+player_left_walk=[pygame.image.load('images/playersplit/side0.png'),pygame.image.load('images/playersplit/side1.png'),pygame.image.load('images/playersplit/side0.png'),pygame.image.load('images/playersplit/side2.png')]
+player_right_walk=[pygame.transform.flip(pygame.image.load('images/playersplit/side0.png'),True,False),pygame.transform.flip(pygame.image.load('images/playersplit/side1.png'),True,False),pygame.transform.flip(pygame.image.load('images/playersplit/side0.png'),True,False),pygame.transform.flip(pygame.image.load('images/playersplit/side2.png'),True,False)]
+player_still=[pygame.image.load('images/playersplit/front0.png'),pygame.image.load('images/playersplit/front0.png'),pygame.image.load('images/playersplit/front0.png'),pygame.image.load('images/playersplit/front0.png')]
+player_up_run=[pygame.image.load('images/playersplit_run/back0.png'),pygame.image.load('images/playersplit_run/back1.png'),pygame.image.load('images/playersplit_run/back0.png'),pygame.image.load('images/playersplit_run/back2.png')]
+player_down_run=[pygame.image.load('images/playersplit_run/front0.png'),pygame.image.load('images/playersplit_run/front1.png'),pygame.image.load('images/playersplit_run/front0.png'),pygame.image.load('images/playersplit_run/front2.png')]
+player_left_run=[pygame.image.load('images/playersplit_run/side0.png'),pygame.image.load('images/playersplit_run/side1.png'),pygame.image.load('images/playersplit_run/side0.png'),pygame.image.load('images/playersplit_run/side2.png')]
+player_right_run=[pygame.transform.flip(pygame.image.load('images/playersplit_run/side0.png'),True,False),pygame.transform.flip(pygame.image.load('images/playersplit_run/side1.png'),True,False),pygame.transform.flip(pygame.image.load('images/playersplit_run/side0.png'),True,False),pygame.transform.flip(pygame.image.load('images/playersplit/side2.png'),True,False)]
+player_walk = [player_left_walk,player_right_walk,player_up_walk,player_down_walk,player_still]
+player_run = [player_left_run,player_right_run,player_up_run,player_down_run,player_still]
