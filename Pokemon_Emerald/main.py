@@ -14,10 +14,16 @@ if ( __name__ == "__main__" ):
     pygame.init()
     pygame.mixer.init()
 
+    window_size = (960,640)
+    display = pygame.display.Info()
+    pos_x = (display.current_w / 2) - (window_size[0] / 2)
+    pos_y = (display.current_h / 2) - (window_size[1] / 2)
+    print(pos_x, pos_y)
+    os.environ['SDL_VIDEO_WINDOW_POS'] = "%d,%d" % (pos_x, pos_y)
     screen_size = (screen_width,screen_height)
     screen = pygame.display.set_mode(screen_size, HWSURFACE|DOUBLEBUF|RESIZABLE)
     render_screen = screen.copy()
-    screen = pygame.display.set_mode((960, 640), HWSURFACE|DOUBLEBUF|RESIZABLE)
+    screen = pygame.display.set_mode(window_size, HWSURFACE|DOUBLEBUF|RESIZABLE)
 
     pygame.display.set_caption("PyThamon")
     icon = icon.convert_alpha()

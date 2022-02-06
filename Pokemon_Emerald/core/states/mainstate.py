@@ -107,35 +107,35 @@ class MainState(GameState):
             if (event.type == pygame.KEYDOWN):
                 if(event.key == pygame.K_q):
                     self.make_player_run()
-                if(event.key == pygame.K_w):
+                if(event.key == pygame.K_e):
                     self.make_player_walk()
             if (event.type == pygame.KEYDOWN):
                 k = event.key
-                if(k == pygame.K_LEFT):
+                if(k == pygame.K_LEFT or k == pygame.K_a):
                     for x in range(0,(len(self.current_level.queue_list.sprites()))):
                         (self.current_level.queue_list.sprites())[x].entity_collision(self.player)
                     self.controls.left = True
-                elif(k == pygame.K_RIGHT):
+                elif(k == pygame.K_RIGHT or k == pygame.K_d):
                     for x in range(0,(len(self.current_level.queue_list.sprites()))):
                         (self.current_level.queue_list.sprites())[x].entity_collision(self.player)
                     self.controls.right = True
-                elif(k == pygame.K_UP):
+                elif(k == pygame.K_UP or k == pygame.K_w):
                     for x in range(0,(len(self.current_level.queue_list.sprites()))):
                         (self.current_level.queue_list.sprites())[x].entity_collision(self.player)
                     self.controls.up = True
-                elif(k == pygame.K_DOWN):
+                elif(k == pygame.K_DOWN or k == pygame.K_s):
                     for x in range(0,(len(self.current_level.queue_list.sprites()))):
                         (self.current_level.queue_list.sprites())[x].entity_collision(self.player)
                     self.controls.down = True
             elif (event.type == pygame.KEYUP):
                 k = event.key
-                if(k == pygame.K_LEFT):
+                if(k == pygame.K_LEFT or k == pygame.K_a):
                     self.controls.left = False
-                elif(k == pygame.K_RIGHT):
+                elif(k == pygame.K_RIGHT or k == pygame.K_d):
                     self.controls.right = False
-                elif(k == pygame.K_UP):
+                elif(k == pygame.K_UP or k == pygame.K_w):
                     self.controls.up = False
-                elif(k == pygame.K_DOWN):
+                elif(k == pygame.K_DOWN or k == pygame.K_s):
                     self.controls.down = False
 
         for subarea in self.subareas:
