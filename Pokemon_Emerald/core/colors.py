@@ -8,6 +8,6 @@ green = (0,255,0)
 grey = (90,90,90)
 silver = (200,200,200)
 
-red_alpha = (255,0,0,100)
-blue_alpha = (0,0,255,100)
+transparent_red = (255,0,0,100)
+transparent_blue = (0,0,255,100)
 transparent_alpha = (255,255,255,0)

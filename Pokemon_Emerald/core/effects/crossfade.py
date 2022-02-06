@@ -3,9 +3,12 @@
 # of a Surface over time
 # python_bro
 # 9/7/13
+
 import pygame
-from files import *
+from core.colors import *
+from core.files import *
 pygame.init()
+
 class CrossFade(pygame.sprite.Sprite):
     """Synthesizes fades by incrementing the transparency
         of a black surface blitted on top of the screen"""
@@ -16,7 +19,7 @@ class CrossFade(pygame.sprite.Sprite):
         #The size is dynamically based on the size of the screen
         self.image = pygame.Surface(screen.get_size())
         self.image = self.image.convert()
-        self.image.fill((grey))
+        self.image.fill(black)
 
         #get the Rect dimensions
         self.rect = self.image.get_rect()
