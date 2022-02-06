@@ -7,4 +7,4 @@ Uses Python 3.10 and Pygame 2.0.
 ## Major updates
  - Removed most variables in main and moved them to separate classes.
  - Updated main to run off a state machine to save myself from a headache when porting over ;)
- - Most features work once again, but the game is still sometimes buggy due to novice programming style when originally written. Specifically the collision & event timing might not work correctly.
+ - Most features work again! The game still has some buggs, but they're left in to keep this as preserved as possible (They existed and were known at submission time). Specifically the movement, collision, and event timing might not work correctly.
