@@ -1,1 +1,0 @@
-C:\Users\kenkm\AppData\Local\Programs\Python\Python310\Scripts\2to3.exe Pokemon_Emerald/Pokemon_Emerald.py
