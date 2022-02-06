@@ -1,4 +1,4 @@
-# Pokemon_CS105
+# Pythamon - (UNM CS105 Project)
 First CS Project (Pokemon Emerald Remake)
 
 The project was originally created in Python 2.7, but has been ported to the newest version. Most code was kept intact to preserve code style.
